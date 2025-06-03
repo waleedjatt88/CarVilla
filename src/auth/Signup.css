@@ -8,17 +8,19 @@ html {
   overflow-x: hidden;
 }
 
-body {
+#signup-page14 {
   min-height: 100vh;
   background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
   background-image: url("../assets/login-signup/logsin bg.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  position: relative;
-  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* overflow-x: hidden; */
 }
-body::before {
+#signup-page14::before {
   content: "";
   position: fixed;
   z-index: 0;
@@ -28,8 +30,8 @@ body::before {
   bottom: 0;
   width: 100vw;
   height: 100vh;
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  /* backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px); */
   pointer-events: none;
 }
 .login-link a {
@@ -43,20 +45,28 @@ body::before {
   color: #1e40af;
 }
 
-.signup-container {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  max-width: 400px;
+.signup-container15 {
+  width: 380px;
   margin: 60px auto;
   background: rgba(255, 255, 255, 0.92);
   border-radius: 18px;
   box-shadow: 0 8px 32px rgba(30, 58, 138, 0.18);
   padding: 2.5rem 2rem 2rem 2rem;
+  position: relative;
+  z-index: 1;
   text-align: center;
-  animation: signupPop 0.7s cubic-bezier(0.23, 1, 0.32, 1);
-  box-sizing: border-box;
-  /* backdrop-filter: blur(2px);  */
+  animation: loginPop 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+  /* backdrop-filter: blur(2px); */
+}
+.signup-container15::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  /* backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px); */
+  background: inherit;
+  border-radius: 18px;
 }
 @keyframes signupPop {
   0% {
@@ -69,17 +79,17 @@ body::before {
   }
 }
 
-.logo1 {
+.logo16 {
   text-align: center;
   margin-bottom: 25px;
   cursor: pointer;
 }
-.logo1 i {
+.logo16 i {
   font-size: 40px;
   color: #e74c3c;
   margin-bottom: 10px;
 }
-.logo1 h2 {
+.logo16 h2 {
   color: #1e3a8a;
   font-size: 26px;
   font-weight: 700;
@@ -87,11 +97,11 @@ body::before {
   letter-spacing: 1px;
 }
 
-.signup-form .input-group {
+.signup-form17 .input-group19 {
   margin-bottom: 20px;
   position: relative;
 }
-.signup-form .input-group i {
+.signup-form17 .input-group19 i {
   position: absolute;
   left: 15px;
   top: 50%;
@@ -99,7 +109,7 @@ body::before {
   color: #777;
   font-size: 16px;
 }
-.signup-form .input-group input {
+.signup-form17 .input-group19 input {
   width: 100%;
   padding: 12px 15px 12px 45px;
   border: 1px solid #ddd;
@@ -109,7 +119,7 @@ body::before {
   background: #f7faff;
 }
 
-.signup-form .input-group input:focus {
+.signup-form17 .input-group19 input:focus {
   border-color: #3b82f6;
   outline: none;
   box-shadow: 0 0 6px rgba(59, 130, 246, 0.18);
@@ -227,7 +237,7 @@ body::before {
 .twitter {
   background-color: #1da1f2;
 }
-.error {
+.error20 {
   color: #e74c3c;
   font-size: 13px;
   margin-top: 4px;
@@ -237,25 +247,25 @@ body::before {
 }
 
 @media (max-width: 768px) {
-  .signup-container {
+  .signup-container15 {
     width: 98%;
     min-width: unset;
     padding: 20px 8px;
     border-radius: 12px;
     box-shadow: none;
   }
-  .signup-form {
+  .signup-form17 {
     padding: 0;
   }
-  .name-fields {
+  .name-fields18 {
     flex-direction: column;
     gap: 0;
   }
-  .input-group {
+  .input-group19 {
     width: 100%;
     margin-bottom: 18px;
   }
-  .logo1 {
+  .logo16 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -267,7 +277,7 @@ body::before {
   }
 }
 @media (max-width: 500px) {
-  .signup-container {
+  .signup-container15 {
     width: 100%;
     padding: 1.2rem 0.5rem;
     margin: 20px auto;
@@ -277,11 +287,11 @@ body::before {
 }
 
 @media (max-width: 480px) {
-  .signup-container {
+  .signup-container15 {
     padding: 10px 2px;
     border-radius: 6px;
   }
-  .logo1 h2 {
+  .logo16 h2 {
     font-size: 1.2rem;
   }
   .signup-btn {

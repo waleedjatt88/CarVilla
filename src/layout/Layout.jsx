@@ -9,6 +9,7 @@ function Layout() {
       <Navbar />
 
       <main>
+        {/* <CommonRoutes /> */}
         <Outlet id="outlet" />
       </main>
       <Footer />

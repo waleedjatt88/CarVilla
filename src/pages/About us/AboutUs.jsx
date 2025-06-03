@@ -13,7 +13,7 @@ const AboutUs = () => {
   const navigate = useNavigate();
   return (
     <>
-      <nav
+      {/* <nav
         style={{
           background: "#2c2e4a",
           padding: "10px 30px",
@@ -72,7 +72,7 @@ const AboutUs = () => {
             Signup
           </button>
         </div>
-      </nav>
+      </nav> */}
 
       <div className="about-us-container">
         <main className="about-main">

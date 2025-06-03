@@ -1,41 +1,41 @@
-#new-cars-container {
+#new-cars-container40 {
   position: relative;
   top: 0px;
   object-fit: cover;
   background-color: #f7f8fa;
-  scroll-margin-top: 100px; 
+  scroll-margin-top: 100px;
   margin-top: 40px;
 }
-#new-cars-container a {
+#new-cars-container40 a {
   text-decoration: none;
   color: aliceblue;
 }
 
-#new-cars-container a:hover {
+#new-cars-container40 a:hover {
   opacity: 0.8;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
-.new-cars-header {
+.new-cars-header41 {
   text-align: center;
   margin: 20px 0;
   text-transform: capitalize;
   font-size: 17px;
 }
 
-.new-cars-header h2 {
+.new-cars-header41 h2 {
   font-size: 30px;
   word-spacing: 11px;
 }
 
-.new-cars-header h5 {
+.new-cars-header41 h5 {
   font-size: 16px;
   margin-bottom: 10px;
   word-spacing: 4px;
   padding-top: 10px;
 }
-.slideshow-container {
+.slideshow-container42 {
   object-fit: cover;
   max-width: 1100px;
   position: relative;
@@ -43,6 +43,16 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   overflow: hidden;
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }
 
 .car-slide {
@@ -56,13 +66,13 @@
   display: block;
 }
 
-.car-image {
+.car-image45 {
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
 
-.car-info {
+.car-info43 {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -73,19 +83,19 @@
   padding-top: 60px;
 }
 
-.car-info h2 {
+.car-info43 h2 {
   font-size: 2rem;
   margin-bottom: 10px;
   color: #fff;
 }
 
-.car-info p {
+.car-info43 p {
   margin-bottom: 20px;
   line-height: 1.5;
   color: #ddd;
 }
 
-.view-details {
+.view-details44 {
   display: inline-block;
   padding: 10px 20px;
   background-color: #e10600;
@@ -96,11 +106,11 @@
   transition: background-color 0.3s;
 }
 
-.view-details:hover {
+.view-details44:hover {
   background-color: #b90500;
 }
 
-.dots-container {
+.dots-container46 {
   text-align: center;
   margin-top: 20px;
 }
@@ -141,7 +151,7 @@
 }
 
 @media (max-width: 768px) {
-  .car-info {
+  .car-info43 {
     padding: 20px;
     padding-top: 40px;
   }
@@ -152,12 +162,12 @@
     height: 300px;
   }
 
-  .car-info {
+  .car-info43 {
     padding: 15px;
     padding-top: 30px;
   }
 
-  .view-details {
+  .view-details44 {
     padding: 8px 15px;
   }
 }
@@ -168,12 +178,12 @@
     height: 300px;
   }
 
-  #new-cars-container {
+  #new-cars-container40 {
     object-fit: cover;
     margin: 5px;
   }
 
-  .new-cars-header h5 {
+  .new-cars-header41 h5 {
     padding: 10px;
   }
 }

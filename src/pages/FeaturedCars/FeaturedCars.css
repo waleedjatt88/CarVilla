@@ -1,4 +1,4 @@
-#Featured-Cars-Container {
+#Featured-Cars-Container57 {
   background-color: #f7f8fa;
   margin-bottom: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -6,7 +6,7 @@
   margin-top: 40px;
 }
 
-.featured-cars-header {
+.featured-cars-header58 {
   padding: 10px;
   position: relative;
   top: 0px;
@@ -16,32 +16,32 @@
   margin-bottom: 30px;
 }
 
-.featured-cars-header h3 {
+.featured-cars-header58 h3 {
   font-size: 18px;
   margin-bottom: 10px;
   color: #555;
   text-transform: uppercase;
 }
 
-.featured-cars-header h2 {
+.featured-cars-header58 h2 {
   font-size: 32px;
   font-weight: bold;
   color: #333;
 }
 
-.featured-cars-header p {
+.featured-cars-header58 p {
   color: #4d4dfa;
   font-size: 20px;
 }
 
-#featured-cars-cards {
+#featured-cars-cards59 {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 25px;
   margin-inline: 10%;
 }
 
-#f-cards-container {
+#f-cards-container60 {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -52,7 +52,7 @@
   margin-bottom: 10px;
 }
 
-#featured-cars-card {
+#featured-cars-card61 {
   background: rgba(255, 255, 255, 0.85);
   position: relative;
   margin: 10px;
@@ -64,17 +64,17 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#f-cards-container:hover #featured-cars-card {
+#f-cards-container60:hover #featured-cars-card61 {
   transform: translateY(-55%);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-#featured-cars-card:hover {
+#featured-cars-card61:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-#featured-cars-card img {
+#featured-cars-card61 img {
   width: 100%;
   height: 180px;
   object-fit: cover;
@@ -83,7 +83,7 @@
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.5);
 }
 
-.car-spec {
+.car-spec62 {
   font-size: 14px;
   color: #777;
   padding: 10px 15px;
@@ -91,7 +91,7 @@
   border-top: 1px solid #eee;
 }
 
-.card-description {
+.card-description63 {
   position: absolute;
   bottom: -100%;
   left: 0;
@@ -106,27 +106,27 @@
   box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.card-description h2 {
+.card-description63 h2 {
   color: #000;
 }
 
-.card-description h4 {
+.card-description63 h4 {
   color: #000;
 }
 
-#f-cards-container:hover .card-description {
+#f-cards-container60:hover .card-description63 {
   bottom: 0;
 }
 
-.card-description:hover {
+.card-description63:hover {
   display: block;
 }
 
-#f-cards-container:hover {
+#f-cards-container60:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-#featured-cars-card hr {
+#featured-cars-card61 hr {
   border: none;
   height: 1px;
   background-color: #eee;

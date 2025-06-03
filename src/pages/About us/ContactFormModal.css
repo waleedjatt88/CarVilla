@@ -1,4 +1,4 @@
-.css */ .modal-overlay {
+/* .css */ .modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -8,10 +8,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 2000;
-}
+  z-index: 2000; 
+  backdrop-filter: blur(5px);
+  animation: fadeIn 0.3s ease-in-out;
 
 .modal-content {
+  margin-left: 50px;
   background: #fff;
   border-radius: 16px;
   padding: 2rem 2.5rem;
@@ -78,4 +80,5 @@
 
 .submit-btn:hover {
   background: #2563eb;
+}
 }

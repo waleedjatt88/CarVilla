@@ -1,28 +1,27 @@
-
-#content-section {
-  max-width: 1200px;
-  margin: auto;
+#content-section64 {
+  max-width: 1500px;
+  /* margin-top: 30%; */
   padding: 20px;
-  position: relative;
   top: 0px;
-  scroll-margin-top: 100px; 
-  margin-top: 40px;
+  
+
 }
 
-#content-section h2 {
+#content-section64 h2 {
   text-align: center;
   margin-bottom: 20px;
   color: #004d40;
   font-size: 32px;
 }
-.cards {
+
+.cards65 {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 50px;
   flex-wrap: wrap;
 }
 
-.card {
+.card66 {
   position: relative;
   width: 300px;
   height: 400px;
@@ -30,17 +29,19 @@
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.card:hover {
+
+.card66:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-.card img {
+
+.card66 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.card-overlay {
+.card66-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -55,17 +56,17 @@
   transition: opacity 0.3s ease;
 }
 
-.card:hover .card-overlay {
+.card66:hover .card66-overlay {
   opacity: 1;
 }
 
-.card-overlay h3 {
+.card66-overlay h3 {
   font-size: 20px;
   text-align: center;
   padding: 10px;
 }
 
-.card-body {
+.card66-body {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -76,28 +77,28 @@
 }
 
 @media (max-width: 1200px) {
-  .card {
+  .card66 {
     width: 280px;
     height: 380px;
   }
 }
 
 @media (max-width: 992px) {
-  .card {
+  .card66 {
     width: 250px;
     height: 350px;
   }
 }
 
 @media (max-width: 768px) {
-  .card {
+  .card66 {
     width: 100%;
     max-width: 300px;
   }
 }
 
 @media (max-width: 576px) {
-  .card {
+  .card66 {
     width: 100%;
     max-width: 280px;
     height: 350px;
@@ -105,13 +106,13 @@
 }
 
 @media (max-width: 375px) {
-  .card {
+  .card66 {
     width: 100%;
     max-width: 250px;
     height: 300px;
   }
 
-  .cards {
+  .cards65 {
     width: fit-content;
   }
 }

@@ -1,26 +1,26 @@
-#Clients {
+#Clients51 {
   padding: 60px 20px;
   background-color: #f8f9fa;
   text-align: center;
 }
 
-.clients-header {
+.clients-header52 {
   margin-bottom: 40px;
 }
 
-.clients-header h3 {
+.clients-header52 h3 {
   font-size: 2rem;
   color: #2c2e4a;
   margin-bottom: 15px;
 }
 
-.clients-header p {
+.clients-header52 p {
   font-size: 16px;
   color: #555;
   margin-bottom: 40px;
 }
 
-.testimonials-container {
+.testimonials-container53 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -28,7 +28,7 @@
   margin-bottom: 50px;
 }
 
-.testimonial {
+.testimonial54 {
   flex: 1;
   min-width: 280px;
   max-width: 350px;
@@ -41,12 +41,12 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.testimonial:hover {
+.testimonial54:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.testimonial img {
+.testimonial54 img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -54,30 +54,30 @@
   object-fit: contain;
 }
 
-.testimonial h4 {
+.testimonial54 h4 {
   font-size: 18px;
   color: #333;
   margin-bottom: 10px;
   font-weight: bold;
 }
 
-.testimonial p {
+.testimonial54 p {
   font-size: 14px;
   color: #555;
   line-height: 1.5;
 }
 
-.clients-logos {
+.clients-logos55 {
   margin-top: 50px;
 }
 
-.clients-logos h3 {
+.clients-logos55 h3 {
   font-size: 1.5rem;
   color: #2c2e4a;
   margin-bottom: 30px;
 }
 
-.logos-container {
+.logos-container56 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -85,7 +85,7 @@
   gap: 30px;
 }
 
-.logos-container img {
+.logos-container56 img {
   height: 50px;
   max-width: 150px;
   object-fit: contain;
@@ -93,21 +93,21 @@
   transition: filter 0.3s;
 }
 
-.logos-container img:hover {
+.logos-container56 img:hover {
   filter: grayscale(0%);
 }
 
 @media (max-width: 768px) {
-  .testimonials-container {
+  .testimonial54s-container53 {
     flex-direction: column;
     align-items: center;
   }
 
-  .testimonial {
+  .testimonial54 {
     max-width: 90%;
   }
 
-  .logos-container {
+  .logos-container56 {
     gap: 15px;
   }
 }

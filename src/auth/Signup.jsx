@@ -15,7 +15,6 @@ function Signup() {
   const [touched, setTouched] = useState({});
   const [submitting, setSubmitting] = useState(false);
 
-  // Validation logic
   const validate = () => {
     const newErrors = {};
     if (!form.firstName.trim()) newErrors.firstName = "First name is required";
@@ -73,15 +72,15 @@ function Signup() {
   const validationErrors = validate();
 
   return (
-    <div>
-      <div className="signup-container">
-        <div className="logo1">
+    <div id="signup-page14">
+      <div className="signup-container15">
+        <div className="logo16">
           <i className="fas fa-car" />
           <h2>CarVilla</h2>
         </div>
-        <form className="signup-form" onSubmit={handleSubmit} noValidate>
-          <div className="name-fields">
-            <div className="input-group">
+        <form className="signup-form17" onSubmit={handleSubmit} noValidate>
+          <div className="name-fields18">
+            <div className="input-group19">
               <i className="fa-regular fa-user" style={{ color: "#0c7ed4" }} />
               <input
                 type="text"
@@ -94,10 +93,10 @@ function Signup() {
                 required
               />
               {touched.firstName && errors.firstName && (
-                <span className="error">{errors.firstName}</span>
+                <span className="error20">{errors.firstName}</span>
               )}
             </div>
-            <div className="input-group">
+            <div className="input-group19">
               <i className="fa-regular fa-user" style={{ color: "#0c7ed4" }} />
               <input
                 type="text"
@@ -110,11 +109,11 @@ function Signup() {
                 required
               />
               {touched.lastName && errors.lastName && (
-                <span className="error">{errors.lastName}</span>
+                <span className="error20">{errors.lastName}</span>
               )}
             </div>
           </div>
-          <div className="input-group">
+          <div className="input-group19">
             <i
               className="fa-regular fa-envelope"
               style={{ color: "#0c7ed4" }}
@@ -130,10 +129,10 @@ function Signup() {
               required
             />
             {touched.email && errors.email && (
-              <span className="error">{errors.email}</span>
+              <span className="error20">{errors.email}</span>
             )}
           </div>
-          <div className="input-group">
+          <div className="input-group19">
             <i className="fa-solid fa-lock" style={{ color: "#0299d9" }} />
             <input
               type="password"
@@ -146,10 +145,10 @@ function Signup() {
               required
             />
             {touched.password && errors.password && (
-              <span className="error">{errors.password}</span>
+              <span className="error20">{errors.password}</span>
             )}
           </div>
-          <div className="input-group">
+          <div className="input-group19">
             <i className="fa-solid fa-lock" style={{ color: "#0299d9" }} />
             <input
               type="password"
@@ -162,7 +161,7 @@ function Signup() {
               required
             />
             {touched.confirmPassword && errors.confirmPassword && (
-              <span className="error">{errors.confirmPassword}</span>
+              <span className="error20">{errors.confirmPassword}</span>
             )}
           </div>
           <div className="terms">
@@ -176,11 +175,11 @@ function Signup() {
               required
             />
             <label htmlFor="terms">
-              I agree to the <a href="#">Terms of Service</a> and{" "}
+              <span> </span>I agree to the <a href="#">Terms of Service</a> and{" "}
               <a href="#">Privacy Policy</a>
             </label>
             {touched.terms && errors.terms && (
-              <span className="error" style={{ display: "block" }}>
+              <span className="error20" style={{ display: "block" }}>
                 {errors.terms}
               </span>
             )}

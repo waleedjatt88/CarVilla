@@ -51,14 +51,14 @@ function Login() {
   const navigate = useNavigate();
 
   return (
-    <div>
-      <div className="login-container">
-        <div className="login-logo">
+    <div className="login-page22">
+      <div className="login-container1">
+        <div className="login-logo2">
           <i className="fas fa-car" />
           <h2>CarVilla</h2>
         </div>
-        <form className="login-form" onSubmit={handleSubmit} noValidate>
-          <div className="input-group">
+        <form className="login-form3" onSubmit={handleSubmit} noValidate>
+          <div className="input-group4">
             <i
               className="fa-regular fa-envelope"
               style={{ color: "#0c7ed4" }}
@@ -74,10 +74,10 @@ function Login() {
               required
             />
             {touched.email && errors.email && (
-              <span className="error">{errors.email}</span>
+              <span className="error5">{errors.email}</span>
             )}
           </div>
-          <div className="input-group">
+          <div className="input-group4">
             <i className="fa-solid fa-lock" style={{ color: "#0299d9" }} />
             <input
               type="password"
@@ -90,10 +90,10 @@ function Login() {
               required
             />
             {touched.password && errors.password && (
-              <span className="error">{errors.password}</span>
+              <span className="error5">{errors.password}</span>
             )}
           </div>
-          <div className="options">
+          <div className="options6">
             <label>
               <input
                 type="checkbox"
@@ -107,30 +107,30 @@ function Login() {
             </label>
           </div>
           {touched.terms && errors.terms && (
-            <span className="error">{errors.terms}</span>
+            <span className="error5">{errors.terms}</span>
           )}
           <button
             type="submit"
-            className="login-btn"
+            className="login-btn7"
             disabled={submitting || Object.keys(validationErrors).length > 0}
           >
             {submitting ? "Logging in..." : "Login"}
           </button>
           <div>
-            <p className="register">
-              Don't have an account? <Link to="/signup">Register now</Link>
+            <p className="register8">
+              Don't have an account? <Link to="/signup">register now</Link>
             </p>
           </div>
-          <div className="social-login">
+          <div className="social-login9">
             <p>Or login with</p>
-            <div className="social-icons">
-              <a href="#" className="facebook">
+            <div className="social-icons10">
+              <a href="#" className="facebook11">
                 <i className="fab fa-facebook-f" />
               </a>
-              <a href="#" className="google">
+              <a href="#" className="google12">
                 <i className="fab fa-google" />
               </a>
-              <a href="#" className="twitter">
+              <a href="#" className="twitter13">
                 <i className="fab fa-twitter" />
               </a>
             </div>

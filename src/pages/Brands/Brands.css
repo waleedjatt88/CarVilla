@@ -1,4 +1,4 @@
-#brands-section {
+#brands-section47 {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   scroll-margin-top: 100px;
   margin-top: 40px;
@@ -14,32 +14,32 @@ body::before {
   z-index: -1;
 }
 
-.brands-header {
+.brands-header48 {
   margin-bottom: 40px;
   text-align: center;
 }
 
-.brands-header h2 {
+.brands-header48 h2 {
   font-size: 2.5rem;
   color: #2c2e4a;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 
-.brands-header h5 {
+.brands-header48 h5 {
   font-size: 1.2rem;
   color: #777;
   margin-bottom: 20px;
 }
 
-.brands-container {
+.brands-container49 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
 }
 
-.brand-card {
+.brand-card50 {
   width: 200px;
   padding: 20px;
   border-radius: 10px;
@@ -48,24 +48,24 @@ body::before {
   background-color: white;
   background: rgba(255, 255, 255, 0.85);
 }
-.brand-card:hover {
+.brand-card50:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
-.brand-card img {
+.brand-card50 img {
   width: 80%;
   height: auto;
   margin-bottom: 15px;
 }
 
-.brand-card h3 {
+.brand-card50 h3 {
   font-size: 1.2rem;
   margin-bottom: 10px;
   color: #2c2e4a;
 }
 
-.brand-card p {
+.brand-card50 p {
   font-size: 0.9rem;
   color: #777;
 }

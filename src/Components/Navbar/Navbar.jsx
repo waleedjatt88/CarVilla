@@ -4,6 +4,7 @@ import logoDefault from "../../assets/logo/logoimage-removebg-preview.png";
 import logoScrolled from "../../assets/logo/0f1021e9-4dd3-4f4e-888e-498411239af4.png";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuActive, setIsMenuActive] = useState(false);
@@ -13,6 +14,7 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsMenuActive(!isMenuActive);
   };
+  const location = useLocation();
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -30,18 +32,54 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleHomeClick = () => {
+    if (location.pathname === "/") {
+      setTimeout(() => {
+        const el = document.getElementById("backimage");
+        if (el) el.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    } else {
+      navigate("/", { state: { scrollToBackimage: true } });
+    }
+  };
+
+  useEffect(() => {
+    if (
+      location.pathname === "/" &&
+      location.state &&
+      location.state.scrollToBackimage
+    ) {
+      setTimeout(() => {
+        const el = document.getElementById("backimage");
+        if (el) el.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    }
+  }, [location]);
+
   return (
-    <div id="first-page">
+    <div id="first-page23">
       <header>
-        <div id="header" className={isScrolled ? "scrolled" : ""}>
+        <div id="header24" className={isScrolled ? "scrolled" : ""}>
           <nav>
-            <div id="navbar">
-              <div className="logo">
-                <img id="logo-img" src={logoSrc} alt="Carvilla Logo" />
+            <div id="navbar25">
+              <div className="logo26">
+                <Link to="/">
+                  {" "}
+                  <img id="logo-img" src={logoSrc} alt="Carvilla Logo" />
+                </Link>
               </div>
-              <ul id="menu" className={isMenuActive ? "active" : ""}>
+              <ul id="menu27" className={isMenuActive ? "active" : ""}>
                 <li>
-                  <a href="#backimage">HOME</a>
+                  <Link
+                    to="/"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleHomeClick();
+                    }}
+                  >
+                    HOME
+                    {/* {""} <a href="#backimage"></a> */}
+                  </Link>
                 </li>
                 <li>
                   <a href="#content-section">SERVICE</a>
@@ -60,12 +98,12 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link to="/login">
-                    <button className="login-btn">Login</button>
+                    <button className="login-btn28">Login</button>
                   </Link>
                 </li>
                 <li>
                   <button
-                    className="signup-btn"
+                    className="signup-btn29"
                     onClick={() => navigate("/signup")}
                   >
                     Sign Up
@@ -73,7 +111,7 @@ const Navbar = () => {
                 </li>
               </ul>
               <div
-                className="menu-toggle"
+                className="menu-toggle30"
                 id="mobile-menu"
                 onClick={toggleMenu}
               >

@@ -6,8 +6,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
- 
+  padding-top: 10%;
 }
+/* nav {
+  background: #2c2e4a;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  margin-bottom: 32px;
+} */
 
 .about-header {
   width: 100%;
@@ -32,11 +41,9 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem 1.5rem;
-  
 }
 
 .description {
-    
   text-align: center;
   margin-bottom: 3rem;
 }
