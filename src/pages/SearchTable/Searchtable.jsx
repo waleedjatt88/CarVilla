@@ -3,7 +3,7 @@ import './SearchTable.css';
 
 const SearchTable = () => {
   return (
-    <div id="custom-table36">
+    <div id="custom-table36"  className="animate-fade-in">
       <div className="single-model-search37">
         <h2>Select Year</h2>
         <select className="form-control38">

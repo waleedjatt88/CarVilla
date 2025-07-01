@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./NewCars.css";
 import car1 from "../../assets/featured cars/car1.jpeg";
 import car2 from "../../assets/featured cars/car3.jpeg";
@@ -7,6 +7,8 @@ import car4 from "../../assets/featured cars/car 4.jpeg";
 
 const NewCars = () => {
   const [currentSlide, setCurrentSlide] = useState(1);
+  const [showAnimation, setShowAnimation] = useState(false);
+  const containerRef = useRef(null);
 
   const showSlide = (n) => {
     setCurrentSlide(n);
@@ -40,9 +42,33 @@ const NewCars = () => {
     return () => clearTimeout(timer);
   }, [currentSlide]);
 
+  useEffect(() => {
+    const observer = new window.IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setShowAnimation(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.4 }
+    );
+    if (containerRef.current) {
+      observer.observe(containerRef.current);
+    }
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <div id="new-cars-container40">
-      <div className="new-cars-header41">
+    <div
+      id="new-cars-container40"
+      ref={containerRef}
+      className={showAnimation ? "animate-fade-in" : ""}
+    >
+      <div
+        className={`new-cars-header41${
+          showAnimation ? " animate-fade-in" : ""
+        }`}
+      >
         <h5>Checkout the Latest Cars</h5>
         <h2>Newest Cars</h2>
       </div>

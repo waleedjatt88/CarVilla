@@ -18,7 +18,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* overflow-x: hidden; */
+  
 }
 #signup-page14::before {
   content: "";
@@ -30,8 +30,6 @@ html {
   bottom: 0;
   width: 100vw;
   height: 100vh;
-  /* backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px); */
   pointer-events: none;
 }
 .login-link a {
@@ -56,15 +54,12 @@ html {
   z-index: 1;
   text-align: center;
   animation: loginPop 0.7s cubic-bezier(0.23, 1, 0.32, 1);
-  /* backdrop-filter: blur(2px); */
 }
 .signup-container15::before {
   content: "";
   position: absolute;
   inset: 0;
   z-index: -1;
-  /* backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px); */
   background: inherit;
   border-radius: 18px;
 }

@@ -6,6 +6,7 @@
   scroll-margin-top: 100px;
   margin-top: 40px;
 }
+
 #new-cars-container40 a {
   text-decoration: none;
   color: aliceblue;
@@ -25,12 +26,15 @@
 }
 
 .new-cars-header41 h2 {
-  font-size: 30px;
-  word-spacing: 11px;
+  font-size: 2.5rem;
+  color: #2c2e4a;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .new-cars-header41 h5 {
-  font-size: 16px;
+  font-size: 1.2rem;
+  color: #777;
   margin-bottom: 10px;
   word-spacing: 4px;
   padding-top: 10px;
@@ -43,16 +47,6 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   overflow: hidden;
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
 }
 
 .car-slide {
@@ -130,14 +124,6 @@
   background-color: #e10600;
 }
 
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
 
 .fade {
   animation-name: fade;
@@ -157,33 +143,3 @@
   }
 }
 
-@media (max-width: 576px) {
-  .car-slide {
-    height: 300px;
-  }
-
-  .car-info43 {
-    padding: 15px;
-    padding-top: 30px;
-  }
-
-  .view-details44 {
-    padding: 8px 15px;
-  }
-}
-
-@media (max-width: 375px) {
-  .car-slide {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    height: 300px;
-  }
-
-  #new-cars-container40 {
-    object-fit: cover;
-    margin: 5px;
-  }
-
-  .new-cars-header41 h5 {
-    padding: 10px;
-  }
-}

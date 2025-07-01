@@ -49,7 +49,7 @@ body::before {
   background: rgba(255, 255, 255, 0.85);
 }
 .brand-card50:hover {
-  transform: translateY(-10px);
+  transform: translateY(-11px)  !important;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 

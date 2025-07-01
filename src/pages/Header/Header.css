@@ -10,97 +10,42 @@
 #info34 h1{
   font-size: 22px;
  word-spacing: 10px;
+ 
 }
 
 #info34 {
   font-size: 18px;
-   text-align: center;
-  position: absolute;
+  text-align: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
   text-transform: capitalize;
   word-spacing: 4px;
+  position: absolute;
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
- 
- 
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  .animate-fade-in {
-    animation: fadeIn 0.8s ease-out forwards;
-  }
 }
 
-.btn35 {
-  position: absolute;
-  top: 160%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+ 
+#btn35 {
+  position: relative;
+  top: 25px;
   transition: all 0.3s ease-in-out;
   background-color: #524bfc;
   color: white;
   font-size: 16px;
-  padding: 10px 20px;
+  padding: 8px 18px;
   cursor: pointer;
   border-radius: 5px;
   text-align: center;
   border: none;
+
+  
 }
 
-.btn35:hover {
+#btn35:hover {
   background-color: #403bd1;
 }
-@media (max-width: 768px) {
-  #info34 h1 {
-    margin-bottom: 5px;
-  }
 
-  .btn35 {
-    padding: 10px 20px;
-  }
-}
 
-@media (max-width: 576px) {
-  .btn35 {
-    padding: 8px 15px;
-    font-size: 0.9rem;
-  }
 
-  #info34 {
-    width: 95%;
-  }
-}
-
-@media (max-width: 375px) {
-  #info34 {
-    position: relative;
-    top: 0;
-    transform: none;
-    padding: 20px;
-  }
-
-  .btn35 {
-    margin-bottom: 50px;
-    font-size: medium;
-  }
-
-  #backimage33 {
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-  }
-
-  * {
-    font-size: small;
-  }
-}

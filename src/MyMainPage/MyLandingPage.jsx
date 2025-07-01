@@ -12,25 +12,25 @@ import "./MyLand.css";
 function MyLandingPage() {
   return (
     <>
-      {/* <section id="backimage"> */}
+      <section id="backimage">
         <Header />
-      {/* </section> */}
-      {/* <section id="content-section"> */}
+      </section>
+      <section id="content-section">
         <SearchTable />
         <Services />
-      {/* </section> */}
-      {/* <section id="newcarscontainer"> */}
+      </section>
+      <section id="newcarscontainer">
         <NewCars />
-      {/* </section> */}
-      {/* <section id="FeaturedCarsContainer"> */}
+      </section>
+      <section id="FeaturedCarsContainer">
         <FeaturedCars />
-      {/* </section> */}
-      {/* <section id="brandssection"> */}
+      </section>
+      <section id="brandssection">
         <Brands />
-      {/* </section> */}
-      {/* <section id="footer1"> */}
+      </section>
+      <section id="footer1">
         <Clients />
-      {/* </section> */}
+      </section>
     </>
   );
 }

@@ -5,75 +5,14 @@ import { Link, useNavigate } from "react-router-dom";
 import "./Aboutus.css";
 import ContactFormModal from "./ContactFormModal";
 
-// import "../../Components/Navbar/Navbar.css";
-// import "../../Components/Footer/Footer.css";
+
 
 const AboutUs = () => {
   const [showModal, setShowModal] = useState(false);
   const navigate = useNavigate();
   return (
     <>
-      {/* <nav
-        style={{
-          background: "#2c2e4a",
-          padding: "10px 30px",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          boxShadow: "0 2px 8px rgba(0,0,0,0.04)",
-          marginBottom: "32px",
-        }}
-      >
-        <div style={{ display: "flex", alignItems: "center" }}>
-          <img
-            src={logoDefault}
-            alt="Carvilla Logo"
-            style={{ height: "40px", marginRight: "12px" }}
-          />
-          <span
-            style={{ color: "white", fontWeight: "bold", fontSize: "1.3rem" }}
-          >
-            CARVILLA
-          </span>
-        </div>
-        <div style={{ display: "flex", gap: "18px" }}>
-          <Link
-            to="/"
-            style={{ color: "white", textDecoration: "none", fontWeight: 500 }}
-          >
-            Home
-          </Link>
-          <button
-            onClick={() => navigate("/login")}
-            style={{
-              background: "#fff",
-              color: "#2c2e4a",
-              border: "none",
-              borderRadius: "4px",
-              padding: "6px 16px",
-              fontWeight: 500,
-              cursor: "pointer",
-            }}
-          >
-            Login
-          </button>
-          <button
-            onClick={() => navigate("/signup")}
-            style={{
-              background: "#ff4d4f",
-              color: "#fff",
-              border: "none",
-              borderRadius: "4px",
-              padding: "6px 16px",
-              fontWeight: 500,
-              cursor: "pointer",
-            }}
-          >
-            Signup
-          </button>
-        </div>
-      </nav> */}
-
+      
       <div className="about-us-container">
         <main className="about-main">
           <section

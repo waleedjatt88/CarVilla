@@ -1,13 +1,11 @@
 #custom-table36 {
   border-radius: 10px;
   position: relative;
-  top: -150px;
+  top: -160px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   padding: 30px;
-  max-width: 1000px;
-  min-width: 200px;
   margin-inline: 10%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   background-color: rgba(255, 255, 255, 0.95);
@@ -21,7 +19,6 @@
 .single-model-search37 h2 {
   font-size: 20px;
   margin-bottom: 8px;
-  /* color: #333; */
 }
 
 .form-control38 {

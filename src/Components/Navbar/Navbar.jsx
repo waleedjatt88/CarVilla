@@ -18,6 +18,7 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
+    
     const handleScroll = () => {
       if (window.scrollY > 20) {
         setIsScrolled(true);
@@ -31,6 +32,7 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+  
 
   const handleHomeClick = () => {
     if (location.pathname === "/") {
@@ -55,6 +57,7 @@ const Navbar = () => {
       }, 100);
     }
   }, [location]);
+  
 
   return (
     <div id="first-page23">
@@ -70,16 +73,7 @@ const Navbar = () => {
               </div>
               <ul id="menu27" className={isMenuActive ? "active" : ""}>
                 <li>
-                  <Link
-                    to="/"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      handleHomeClick();
-                    }}
-                  >
-                    HOME
-                    {/* {""} <a href="#backimage"></a> */}
-                  </Link>
+                  <a href="#backimage">HOME</a>
                 </li>
                 <li>
                   <a href="#content-section">SERVICE</a>
@@ -97,9 +91,11 @@ const Navbar = () => {
                   <a href="#footer1">CONTACT</a>
                 </li>
                 <li>
-                  <Link to="/login">
-                    <button className="login-btn28">Login</button>
-                  </Link>
+                    <button
+                     className="login-btn28"
+                     onClick={() => navigate("/login")}
+                     >Login</button>
+                
                 </li>
                 <li>
                   <button
