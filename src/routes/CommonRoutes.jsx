@@ -10,12 +10,14 @@ function CommonRoutes() {
   return (
     <>
       <Routes>
+         <Route path="/" element={<Login />} />
+        <Route path="/login" element={< MyLandingPage/>} />
+        <Route path="/signup" element={<Signup />} />
         <Route path="/" element={<Layout />}>
-          <Route index element={<MyLandingPage />} />
+          <Route index element={<Login />} />
           <Route path="aboutus" element={<AboutUs />} />
         </Route>
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
+        
       </Routes>
     </>
   );
