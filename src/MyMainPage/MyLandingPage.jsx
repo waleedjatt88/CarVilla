@@ -8,10 +8,12 @@ import Brands from "../pages/Brands/Brands";
 import Clients from "../pages/Clients/Clients";
 import Footer from "../Components/Footer/Footer";
 import "./MyLand.css";
+import Navbar from "../Components/Navbar/Navbar";
 
 function MyLandingPage() {
   return (
     <>
+    <Navbar/>
       <section id="backimage">
         <Header />
       </section>
@@ -31,6 +33,7 @@ function MyLandingPage() {
       <section id="footer1">
         <Clients />
       </section>
+      <Footer />
     </>
   );
 }
