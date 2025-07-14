@@ -109,13 +109,13 @@ function Login() {
           {touched.terms && errors.terms && (
             <span className="error5">{errors.terms}</span>
           )}
-          <button
+          <Link to="/login"><button
             type="submit"
             className="login-btn7"
             disabled={submitting || Object.keys(validationErrors).length > 0}
           >
             {submitting ? "Logging in..." : "Login"}
-          </button>
+          </button> </Link>
           <div>
             <p className="register8">
               Don't have an account? <Link to="/signup">register now</Link>
